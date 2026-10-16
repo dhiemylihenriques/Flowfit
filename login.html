@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowFit Login</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#A42835 ;
+        }
+        .login{
+            background-color: black;
+            position: absolute;
+            top: 120px;
+            right: 20px;
+            left: auto;
+            padding: 30px;
+            width: 400px;
+            height: 400px;
+            border-radius: 10px;
+            color: #fff;
+        }
+        input{
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            width: 92%;
+            border-radius: 10px;   
+        }
+        button{
+            background-color: #fff;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: #000;
+        } 
+        button:hover{
+            background-color: #A32B14;
+            cursor: pointer;
+        }
+        h1{
+            font-size: 60px;
+            color: #fff;
+        }
+        #para{
+            font-size: 25px;
+            font-weight: bold;
+            color: #fff;
+        }
+        #lista{
+            color: #fff;
+        }
+        .topo{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;                 
+            padding: 20px 40px;     
+        }
+        .logo{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .label-paises {
+            font-size: 14px;
+            color: #fff;
+            margin: 0; 
+        }
+        .input-paises{
+            padding: 8px 12px;
+            background-color: #222;
+            color: white;
+            border: none; 
+            border-radius: 10px;         
+            font-size: 14px;       
+            cursor: pointer;  
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="topo">
+            <a href="index.html" class="logo">Home FlowFit</a>
+            <label for="paises" class="label-paises">País:</label>
+    <select id="paises" name="paises" class="input-paises">
+            <option value="BR">Brasil</option>
+            <option value="US">Estados Unidos</option>
+            <option value="PT">Portugal</option>
+            <option value="ES">Espanha</option>
+            <option value="AR">Argentina</option>
+    </select>
+        </nav>
+        <h1>FlowFit</h1>
+        <p id="para">Aqui você pode gerenciar sua conta</p>
+        <ul id="lista">
+            <li>Ver os treinos</li>
+            <li>Quantos amigos já levou</li>
+            <li>Assinaturas e cancelamento</li>
+            <li>Trocar de plano</li>
+            <li>Trocar dados pessoais</li>
+            <li>Consultar histórico de pagamento</li>
+        </ul>
+    </header>
+    <main>
+        <div class="login">
+            <h2>Faça o Login no FlowFit</h2>
+            <p>Bem-vindo de volta coloque seus dados para acessar</p>
+            <input type="text" placeholder="Nome">
+            <br><br>
+            <input type="password"placeholder=Senha>
+            <br><br>
+            <button id="enviar">Enviar</button>
+        </div>
+    </main>
+    <footer> 
+        <h2 class="nome">FlowFit</h2>
+        <p>Sua melhor versão começa aqui. Estrutura completa e foco nos resultados</p>
+        <h3>PLANOS</h3>
+                <hr>
+        <div>
+            <ul>
+                <li>Nossos Planos</li>
+                <li>Contratos</li>
+                <li>Cupons e Promoções</li>
+            </ul>
+        </div>
+            <h3>INSTITUCIONAL</h3>
+        <hr>
+        <div>
+            <ul>
+                <li>Nossa Historia</li>
+                <li>Fale Conosco</li>
+                <li>Investidores</li>
+            </ul>
+        </div>
+            <h3>NOSSAS ACADEMIAS</h3>
+        <hr>
+        <div>
+            <ul>
+                <li>Encontre uma Academia</li>
+                <li>Estrutura das Academias</li>
+                <li>Aulas e Modalidades</li>
+            </ul>
+            </div>
+            <p>copyright 2026 por FlowFit_thegreat| Todos os Direitos Reservados</p>
+    </footer>
+</body>
+</html>
