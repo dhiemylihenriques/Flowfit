@@ -3,83 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlowFit Academia</title>
+    <title>FlowFit Academias</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body>   
     <header>
-         <nav id="navegacao">
-            <h1>FlowFit</h1>
+        <nav class="navegacao">
+            <h1>Flow<span class="cor-fit">Fit</span></h1>
             <a href="index.html">Home FlowFit</a>
             <a href="#academias">Academias</a>
             <a href="login.html" class="btn login">Já sou aluno</a>
             <a href="cadastro.html" class="btn register">Quero ser FlowFit</a>
         </nav>
-        <h2>Conheça nossas academias FlowFit
-            <br>faça parte você tambem!</h2>
-            <hr>
+        <h2>Conheça nossas academias FlowFit<br>faça parte você também!</h2>
     </header>
+
     <main>
         <h2>Descubra uma FlowFit perto de você</h2>
-        <button id="pesquisar">Busque uma FlowFit aqui!</button>
+        <button class="btn-play btn-exclusivo">Busque uma FlowFit aqui!</button>
         <hr>
-        <div>
-            <section id="academias"></section>
-            <section id="primeiro"></section>
-            <img src="img/academia1.jpeg" alt="img primeira academia" id="primeiro">
-            <h2>Avenida Paulista, 1000</h2>
-            <p>Bairro: Bela Vista Cidade: São Paulo - SP CEP: 01310-100</p>
-            <button class="btn-play">Treine Aqui</button>
+        
+        <div class="container-boxes">
+
+            <div class="card-academia">
+                <img src="img/academia1.jpeg" alt="unidade paulista" class="foto-topo">
+                <div class="infos-card">
+                    <h2>Avenida Paulista, 1000</h2>
+                    <p>Bairro: Bela Vista Cidade: São Paulo - SP CEP: 01310-100</p>
+                    <button class="btn-play">Treine Aqui</button>
+                </div> 
+            </div>
+
+            
+            <div class="card-academia">
+                <img src="img/academia2.jpeg" alt="unidade augusta" class="foto-topo">
+                <div class="infos-card">
+                    <h2>Rua Augusta, 1500</h2>
+                    <p>Bairro: Consolação Cidade: São Paulo - SP CEP: 01304-001</p>
+                    <button class="btn-play">Treine Aqui</button>
+                </div>
+            </div>
+
+            
+            <div class="card-academia">
+                <img src="img/academia3.jpeg" alt="unidade santos" class="foto-topo">
+                <div class="infos-card">
+                    <h2>Rua 15 de Novembro, 250</h2>
+                    <p>Bairro: Centro Histórico Cidade: Santos - SP CEP: 11010-151</p>
+                    <button class="btn-play">Treine Aqui</button>
+                </div>
+            </div>
+
         </div> 
         <hr>
-        <div>
-            <section id="segundo"></section>
-            <img src="img/academia2.jpeg" alt="img segunda academia" id="segundo">
-            <h2>Rua Augusta, 1500</h2>
-            <p>Bairro: Consolação Cidade: São Paulo - SP CEP: 01304-001</p>
-            <button class="btn-play">Treine Aqui</button>
-        </div>
-        <hr>
-        <div>
-            <section id="terceiro"></section>
-            <img src="img/academia3.jpeg" alt="img terceiro academia" id="terceiro">
-            <h2>Rua 15 de Novembro, 250</h2>
-            <p>Bairro: Centro Histórico Cidade: Santos - SP CEP: 11010-151</p>
-            <button class="btn-play">Treine Aqui</button>
-        </div>
-        <hr>
     </main>
+
     <footer>
-         <h2 class="nome">FlowFit</h2>
-        <p>Sua melhor versão começa aqui. Estrutura completa e foco nos resultados</p>
-        <h3>PLANOS</h3>
-                <hr>
-                <div>
-              <ul>
-                 <li>Nossos Planos</li>
-                 <li>Contratos</li>
-                 <li>Cupons e Promoções</li>
-              </ul>
-             </div>
-             <h3>INSTITUCIONAL</h3>
-                <hr>
-                <div>
-              <ul>
-                 <li>Nossa Historia</li>
-                 <li>Fale Conosco</li>
-                 <li>Investidores</li>
-              </ul>
-             </div>
-             <h3>NOSSAS ACADEMIAS</h3>
-                <hr>
-                <div>
-              <ul>
-                 <li>Encontre uma Academia</li>
-                 <li>Estrutura das Academias</li>
-                 <li>Aulas e Modalidades</li>
-              </ul>
-             </div>
-             <p>copyright 2026 por FlowFit_thegreat| Todos os Direitos Reservados</p>
-    </footer>
+    <section id="sobre"></section>
+    <h2 class="nome">Flow<span style="color: #A42835;">Fit</span></h2>
+    <p class="footer-desc">Sua melhor versão começa aqui. Estrutura completa e foco nos resultados</p>
     
+    <div class="footer-links">
+        
+        <div class="footer-col">
+            <h3>PLANOS</h3>
+            <hr>
+            <ul>
+                <li>Nossos Planos</li>
+                <li>Contratos</li>
+                <li>Cupons e Promoções</li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <h3>INSTITUCIONAL</h3>
+            <hr>
+            <ul>
+                <li>Nossa Historia</li>
+                <li>Fale Conosco</li>
+                <li>Investidores</li>
+            </ul>
+        </div>
+        
+        <div class="footer-col">
+            <h3>NOSSAS ACADEMIAS</h3>
+            <hr>
+            <ul>
+                <li>Encontre uma Academia</li>
+                <li>Estrutura das Academias</li>
+                <li>Aulas e Modalidades</li>
+            </ul>
+        </div>
+
+    </div> 
+    
+    <p class="copyright">copyright 2026 por FlowFit_thegreat | Todos os Direitos Reservados</p>
+</footer>
+ 
 </body>
 </html>

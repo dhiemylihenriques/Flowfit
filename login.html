@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlowFit Login</title>
+    <title>Login FlowFit</title>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color:#A42835 ;
+            background-color: #A42835;
         }
-        .login{
+        .login {
             background-color: black;
             position: absolute;
             top: 120px;
@@ -21,7 +21,7 @@
             border-radius: 10px;
             color: #fff;
         }
-        input{
+        input {
             padding: 15px;
             border: none;
             outline: none;
@@ -29,7 +29,7 @@
             width: 92%;
             border-radius: 10px;   
         }
-        button{
+        button {
             background-color: #fff;
             border: none;
             padding: 15px;
@@ -37,30 +37,30 @@
             border-radius: 10px;
             color: #000;
         } 
-        button:hover{
+        button:hover {
             background-color: #A32B14;
             cursor: pointer;
         }
-        h1{
+        h1 {
             font-size: 60px;
             color: #fff;
         }
-        #para{
+        #para {
             font-size: 25px;
             font-weight: bold;
             color: #fff;
         }
-        #lista{
+        #lista {
             color: #fff;
         }
-        .topo{
+        .topo {
             display: flex;
             justify-content: flex-end;
             align-items: center;
             gap: 20px;                 
             padding: 20px 40px;     
         }
-        .logo{
+        .logo {
             color: white;
             text-decoration: none;
             font-weight: bold;
@@ -71,7 +71,7 @@
             color: #fff;
             margin: 0; 
         }
-        .input-paises{
+        .input-paises {
             padding: 8px 12px;
             background-color: #222;
             color: white;
@@ -87,13 +87,13 @@
         <nav class="topo">
             <a href="index.html" class="logo">Home FlowFit</a>
             <label for="paises" class="label-paises">País:</label>
-    <select id="paises" name="paises" class="input-paises">
-            <option value="BR">Brasil</option>
-            <option value="US">Estados Unidos</option>
-            <option value="PT">Portugal</option>
-            <option value="ES">Espanha</option>
-            <option value="AR">Argentina</option>
-    </select>
+            <select id="paises" name="paises" class="input-paises">
+                <option value="BR">Brasil</option>
+                <option value="US">Estados Unidos</option>
+                <option value="PT">Portugal</option>
+                <option value="ES">Espanha</option>
+                <option value="AR">Argentina</option>
+            </select>
         </nav>
         <h1>FlowFit</h1>
         <p id="para">Aqui você pode gerenciar sua conta</p>
@@ -110,12 +110,18 @@
         <div class="login">
             <h2>Faça o Login no FlowFit</h2>
             <p>Bem-vindo de volta coloque seus dados para acessar</p>
+            
+            <label for="name">Nome Completo:</label>
+            <br>
             <input type="text" placeholder="Nome">
             <br><br>
-            <input type="password"placeholder=Senha>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" placeholder="Senha">
             <br><br>
+            
             <button id="enviar">Enviar</button>
         </div>
-    </main> 
+    </main>     
 </body>
 </html>
