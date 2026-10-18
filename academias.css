@@ -1,0 +1,108 @@
+body{
+   background-color: #E1D9D2;
+
+}
+.navegacao h1 {
+    color: white;
+    margin: 0;
+}
+.cor-fit {
+    color: #A42835
+}
+.navegacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #111c; 
+}
+.navegacao a {
+    color: #fff;
+    text-decoration: none;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    font-size: 30px;
+}
+.btn-play.btn-exclusivo{
+    background-color: #111;
+    color: #fff;
+
+}
+.btn-play.btn-exclusivo:hover{
+    background-color: #A32B14;
+    padding: 15px 30px;
+}
+/* Container que organiza as caixas lado a lado */
+.container-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px 0;
+    width: 100%;
+}
+
+/* O box escuro de cada unidade */
+.card-academia {
+    background-color: #111;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;  /* Faz a imagem respeitar as pontas arredondadas do card */
+    box-shadow: 0 4px 10px #111;
+    color: #fff;
+}
+
+/* Imagem colada estritamente no topo */
+.foto-topo {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.infos-card {
+    padding: 20px;
+    text-align: left;
+}
+
+.infos-card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.infos-card p {
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.btn-play {
+    background-color: #A32B14; 
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+footer {
+    background-color: #111;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+.footer-links ul {
+    list-style: none; 
+    padding: 0;
+}
