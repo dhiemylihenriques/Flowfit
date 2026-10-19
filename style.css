@@ -1,6 +1,576 @@
 :root{
     --vermelho-flowfit: #A42835;
     --branco-flowfit: #fff;
-    --cor-de-fundo: #0000
+    --branco: #fff;
+    --cinza: #535353;
+    --cor-de-fundo: #000;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Blinker' ;
+}
+.hero,.main,.footer{
+    padding: 20px 20px 0px 20px;
+}
 
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)), url(img/academia.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+    gap: 40px;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: bold;
+    border-bottom: 5px solid transparent;
+}
+
+header nav a:hover{
+    color: var(--branco);
+    border-bottom: 5px solid var(--vermelho-flowfit);
+}
+
+.logo a, .direita-header{
+    display: flex;
+    align-items: center;
+}
+
+.logo a{
+    gap: 10px;
+}
+
+.direita-header{
+    gap: 30px;
+}
+
+.logo h1{
+    color: var(--branco);
+    
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+    margin-top: 15vh;
+}
+
+.h2-home-center{
+    color:var(--branco);
+    font-size: 50px;
+
+}
+.p-home-end{
+    color: var(--branco);
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.botoes{
+    display: flex;
+}
+
+.btn-disabled{
+    background-color: var(--cinza);
+    padding: 15px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-play{
+    background-color: var(--vermelho-flowfit);
+    padding: 15px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bolder; 
+    border: none;
+}
+.btn-disabled:hover{
+    background-color: white ;
+}
+.btn-play:hover{
+    background-color: white;
+}
+
+.buscar-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-login{
+    background-color: var(--cinza);
+    padding: 15px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+.btn-login:hover{
+    background-color: var(--branco);
+}
+
+.btn-register{
+    background-color: #A42835;
+    padding: 15px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-register:hover{
+    background-color: var(--branco);
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.logo .flow {
+    color: #A42835;
+}
+
+.logo .fit {
+    color: #FFFFFF;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+
+.h2-card-inicio{
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box
+}
+
+.h2-card-inicio{
+margin: 0 0 15px;
+font-size: 24px;
+}
+.p-card-end{
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+padding: 15px;
+box-sizing: border-box;
+font-size: 15px
+}
+.redes{
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box
+}
+
+.princi{
+    font-size: 20px;
+    color: var(--vermelho-flowfit)
+}
+
+.sociais{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 45px;
+    margin-top: 25px;
+}
+.sociais a{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+}
+.rede {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.rede i {
+    font-size: 24px;
+}
+
+.rede span{
+    font-size: 16px;
+}
+
+.rede a{
+    color: #000;
+    text-decoration: none;
+}
+
+.rede a:hover{
+    color: #333;
+}
+
+.info-treinos-modalidades h2{
+    padding: 15px 15px;
+    align-items: center;
+}
+.info-treinos-modalidades span{
+    padding: 15px 15px;
+    align-items: center;
+}
+.info-treinos-modalidades p{
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 30px;                  
+    justify-content: center;   
+    flex-wrap: wrap;           
+    width: 100%;              
+    max-width: 1400px;         
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.musculacao, .danca, .luta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 280px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid var(--branco);
+    border-radius: 10px;
+    background-color: #d9d9d9;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.musculacao img, .danca img, .luta img{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 0;
+}
+.musculacao h3, .danca h3, .luta h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: var(--vermelho-flowfit);
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.botao:hover{
+    background-color: var(--branco);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Seção de Planos */
+#planos {
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.titulo-planos {
+    font-size: 2.2rem;
+    color: #222;
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+
+/* Container para alinhar os cards lado a lado */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plano-card {
+    background: #e9ecef;
+    border-radius: 16px;
+    padding: 30px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+.btn-play, .btn-basico, .btn-economico{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bolder;
+    border: none;
+    margin: 20px 0;
+}
+.btn-play:hover, .btn-basico:hover, .btn-economico:hover {
+    opacity: 0.9;
+}.nome-plano {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.descricao {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.fidelidade {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.preco-box {
+    margin: 15px 0;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.plano-card.black .preco-box {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.preco-antigo {
+    font-size: 0.75rem;
+    text-decoration: line-through;
+}
+
+.preco-zero {
+    font-size: 1.8rem;
+    margin: 5px 0;
+}
+
+.detalhe-preco {
+    font-size: 0.75rem;
+}
+
+.tag-off {
+    background-color: #fff;
+    color: #000;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 4px;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background-color: #fff;
+    color: #a33316;
+    font-size: 0.7rem;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* Botões */
+.btn-play, .btn-basico, .btn-economico {
+    width: 100%;
+    height: 45px;
+    background-color:var(--branco);
+    color: #000;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    margin: 15px 0;
+}
+
+.btn-play:hover, .btn-basico:hover, .btn-economico:hover {
+    opacity: 0.85;
+}
+
+/* Lista de benefícios */
+.incluso-titulo {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.lista-incluso {
+    list-style: none;
+}
+
+.lista-incluso li {
+    font-size: 0.8rem;
+    margin-bottom: 6px;
+}
+
+/* Itens riscados do plano básico */
+.item-desativado {
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+
+/* Fundo preto total da imagem */
+.footer {
+    background-color:var(--cor-de-fundo);
+    color:var(--branco);
+    font-family: Arial, sans-serif;
+    padding: 60px 50px 20px 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Marca e Slogan (Parte Superior) */
+.footer-brand {
+    margin-bottom: 50px;
+}
+
+.footer-brand .nome {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--vermelho-flowfit); 
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.footer-brand p {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+/* Colunas lado a lado */
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Truque para a linha branca ter exatamente a largura do título */
+.title-wrapper {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.footer-col hr {
+    border: none;
+    height: 2px;
+    background-color: #ffffff;
+    width: 100%; 
+    margin: 0;
+}
+
+/* Listas de links */
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 14px;
+}
+
+.footer-col ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+}
+
+
+.footer-bottom {
+    background-color: #161616;
+    margin: 60px -50px -20px -50px; 
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #888888;
+    font-size: 12px;
 }
