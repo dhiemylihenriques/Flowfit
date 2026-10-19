@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja FlowFit</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #A42835;
+        }
+        .login {
+            background-color: black;
+            position: absolute;
+            top: 120px;
+            right: 20px;
+            left: auto;
+            padding: 30px;
+            width: 400px;
+            height: 400px;
+            border-radius: 10px;
+            color: #fff;
+        }
+        .topo {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 20px;                 
+            padding: 20px 40px;     
+        }
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .label-paises {
+            font-size: 14px;
+            color: #fff;
+            margin: 0; 
+        }
+        .input-paises {
+            padding: 8px 12px;
+            background-color: #222;
+            color: white;
+            border: none; 
+            border-radius: 10px;         
+            font-size: 14px;       
+            cursor: pointer;  
+        }
+        .inscricao {
+            background-color: black;
+            position: absolute;
+            top: 100px;
+            right: 20px;
+            left: auto;
+            padding: 20px;
+            width: 600px;
+            height: 600px;
+            border-radius: 10px;
+            color: #fff;
+        }
+        input {
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            width: 80%;
+            border-radius: 10px;   
+        }
+        button {
+            background-color: #fff;
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 10px;
+            color: #000;
+        } 
+        button:hover {
+            background-color: #A32B14;
+            cursor: pointer;
+        }
+        h1 {
+            font-size: 35px;
+            color: #fff;
+        }
+        .p1 {
+            font-size: 25px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .interesse, .interesse option {
+            background-color: #A32B14;
+            color: white;
+        }
+        .interesse {
+            padding: 8px 12px;
+            border: none; 
+            border-radius: 10px;         
+            font-size: 14px;       
+            cursor: pointer;  
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="topo">
+            <a href="index.html" class="logo">Home FlowFit</a>
+            <label for="paises" class="label-paises">País:</label>
+            <select id="paises" name="paises" class="input-paises">
+                <option value="BR">Brasil</option>
+                <option value="US">Estados Unidos</option>
+                <option value="PT">Portugal</option>
+                <option value="ES">Espanha</option>
+                <option value="AR">Argentina</option>
+            </select>
+        </nav>
+    </header>
+    <main>
+        <h1>Faça seu cadastro e se torne <br>FlowFit hoje mesmo!</h1>
+        <p class="p1">Cadastre-se e aproveite todos os beneficios</p>
+        
+        <div class="inscricao">
+            <h2>Seja um FlowFit</h2>
+            <p>Preencha com seus dados</p>
+            
+            <label for="name">Nome Completo:</label>
+            <br>
+            <input type="text" placeholder="Nome" required>
+            <br><br>
+            
+            <label for="email"> Insira seu E-mail:</label>
+            <br>
+            <input type="email" id="email" placeholder="Digite seu E-mail" required>
+            <br><br>
+            
+            <label for="senha">Senha:</label>
+            <br>
+            <input type="password" placeholder="Senha" required>
+            <br><br>
+            
+            <label for="confirme-senha">Confirme a senha:</label>
+            <br>
+            <input type="password" placeholder="Confirme senha" required>
+            <br><br>
+            
+            <label for="interesse">Plano Desejado</label>
+            <br>
+            <select class="interesse" name="interesse">
+                <option value="" disabled selected hidden>Selecione seu Plano</option>
+                <option value="black">Plano Black</option>
+                <option value="basico">Plano Básico</option>
+                <option value="economico">Plano Econômico</option>
+            </select>
+            <br><br>
+            
+            <button id="enviar">Concluir Cadastro</button>
+        </div>
+    </main> 
+</body>
+</html>

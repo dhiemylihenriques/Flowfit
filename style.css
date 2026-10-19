@@ -427,8 +427,8 @@ font-size: 15px
     position: absolute;
     top: -10px;
     right: 20px;
-    background-color: #fff;
-    color: #a33316;
+    background-color: var(--branco);
+    color: var(--vermelho-flowfit);
     font-size: 0.7rem;
     padding: 3px 10px;
     border-radius: 15px;
@@ -502,7 +502,7 @@ font-size: 15px
 }
 
 .footer-brand p {
-    color: #ffffff;
+    color: var(--branco);
     font-size: 15px;
 }
 
@@ -530,13 +530,13 @@ font-size: 15px
     font-weight: bold;
     letter-spacing: 0.5px;
     margin-bottom: 8px;
-    color: #ffffff;
+    color: var(--branco);
 }
 
 .footer-col hr {
     border: none;
     height: 2px;
-    background-color: #ffffff;
+    background-color: var(--branco);
     width: 100%; 
     margin: 0;
 }
@@ -573,4 +573,5 @@ font-size: 15px
 .footer-bottom p {
     color: #888888;
     font-size: 12px;
+    --cor-de-fundo: #0000
 }
