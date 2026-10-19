@@ -95,6 +95,7 @@ header nav a:hover{
     font-weight: bold;
     border: none;
     white-space: nowrap;
+    
 }
 
 .btn-play{
@@ -103,8 +104,9 @@ header nav a:hover{
     border-radius: 50px;
     cursor: pointer;
     font-weight: bolder; 
-    border: none;
+    border: none; 
 }
+
 .btn-disabled:hover{
     background-color: white ;
 }
@@ -153,11 +155,11 @@ header nav a:hover{
     margin-top: 20px;
 }
 .logo .flow {
-    color: #A42835;
+    color: #FFFFFF;
 }
 
 .logo .fit {
-    color: #FFFFFF;
+    color: #A42835;
 }
 
 .logo a {
@@ -497,7 +499,6 @@ font-size: 15px
     font-size: 24px;
     font-weight: bold;
     font-style: italic;
-    color: var(--vermelho-flowfit); 
     margin-bottom: 10px;
     letter-spacing: 1px;
 }
@@ -505,6 +506,13 @@ font-size: 15px
 .footer-brand p {
     color: var(--branco);
     font-size: 15px;
+}
+.footer-brand .flow {
+    color:#FFFFFF;
+}
+
+.footer-brand .fit {
+    color: #A42835;
 }
 
 /* Colunas lado a lado */
