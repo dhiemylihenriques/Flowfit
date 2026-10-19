@@ -89,15 +89,18 @@ header nav a:hover{
 
 .btn-disabled{
     background-color: var(--cinza);
+    color: #FFFFFF;
     padding: 15px 40px;
     border-radius: 50px;
     cursor: pointer;
     font-weight: bold;
     border: none;
     white-space: nowrap;
-    
 }
-
+.btn-disabled:hover{
+    background-color: var(--vermelho-flowfit) !important;
+     color: #FFFFFF !important;  
+}
 .btn-play{
     background-color: var(--vermelho-flowfit);
     padding: 15px 40px;
@@ -124,6 +127,7 @@ header nav a:hover{
 
 .btn-login{
     background-color: var(--cinza);
+    color: #FFFFFF;
     padding: 15px 40px;
     border-radius: 50px;
     cursor: pointer;
@@ -131,11 +135,12 @@ header nav a:hover{
     border: none;
 }
 .btn-login:hover{
-    background-color: var(--branco);
+    background-color: var(--vermelho-flowfit);
 }
 
 .btn-register{
     background-color: #A42835;
+    color: #FFFFFF;
     padding: 15px 40px;
     border-radius: 50px;
     cursor: pointer;
@@ -144,7 +149,7 @@ header nav a:hover{
 }
 
 .btn-register:hover{
-    background-color: var(--branco);
+    background-color: var(--cinza);
 }
 
 .botoes{
@@ -181,6 +186,7 @@ header nav a:hover{
 margin: 0 0 15px;
 font-size: 24px;
 }
+
 .p-card-end{
 display: flex;
 flex-direction: column;
@@ -190,6 +196,7 @@ padding: 15px;
 box-sizing: border-box;
 font-size: 15px
 }
+
 .redes{
     min-height: 150px;
     display: flex;
@@ -212,6 +219,7 @@ font-size: 15px
     gap: 45px;
     margin-top: 25px;
 }
+
 .sociais a{ 
     display: flex;
     justify-content: center;
@@ -219,6 +227,7 @@ font-size: 15px
     align-items: flex-start;
     gap: 40px;
 }
+
 .rede {
     display: flex;
     flex-direction: column;
@@ -244,14 +253,26 @@ font-size: 15px
     color: #333;
 }
 
+.treinoss{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info-treinos-modalidades span {
+    display: block; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
 .info-treinos-modalidades h2{
     padding: 15px 15px;
     align-items: center;
 }
+
 .info-treinos-modalidades span{
     padding: 15px 15px;
     align-items: center;
 }
+
 .info-treinos-modalidades p{
     align-items: center;
 }
@@ -282,6 +303,15 @@ font-size: 15px
     background-color: #d9d9d9;
     text-align: center;
     flex-shrink: 0;
+    color: #000;
+}
+
+.musculacao:hover p, .danca:hover p, .luta:hover p {
+    color: #000000 !important;
+}
+
+.musculacao:hover .botao, .danca:hover .botao, .luta:hover .botao {
+    color: #000000 !important;
 }
 
 .musculacao img, .danca img, .luta img{
@@ -291,12 +321,14 @@ font-size: 15px
     border-radius: 6px;
     margin: 0;
 }
+
 .musculacao h3, .danca h3, .luta h3{
     font-size: 18px;
     font-weight: bold;
     color: #000;
     margin: 0;
 }
+
 .botao{
     display: flex;
     align-items: center;
@@ -310,11 +342,12 @@ font-size: 15px
     border-radius: 8px;
     box-sizing: border-box;
 }
+
 .botao:hover{
     background-color: var(--branco);
 }
-* {
-    box-sizing: border-box;
+
+    box-sizing: border-box;{
     margin: 0;
     padding: 0;
 }
@@ -345,7 +378,8 @@ font-size: 15px
 }
 
 .plano-card {
-    background: #e9ecef;
+    background: #A42835;
+    color: #E1D9D2;
     border-radius: 16px;
     padding: 30px;
     width: 320px;
@@ -357,6 +391,7 @@ font-size: 15px
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
 }
+
 .btn-play, .btn-basico, .btn-economico{ 
     display: flex;
     align-items: center;
@@ -371,6 +406,7 @@ font-size: 15px
     border: none;
     margin: 20px 0;
 }
+
 .btn-play:hover, .btn-basico:hover, .btn-economico:hover {
     opacity: 0.9;
 }.nome-plano {

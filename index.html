@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FlowFit</title>
+        <link rel="icon" type="image/png" href="img/logo.jpeg">
         <link rel="stylesheet" href="style.css">
         
     </head>
@@ -20,12 +21,13 @@
                             <a href="#planos">PLANOS</a>
                             <a href="#modalidades">MODALIDADES</a>
                             <a href="#sobre">SOBRE</a>
-                            <a href="#academias">ACADEMIA</a>
+                            <a href="academias.html">ACADEMIA</a>
                         </nav>
                         <div class="direita-header">  
                             <div class="botoes">
-                                <button class="btn-login">Já sou aluno</button>
-                                <button id="btn-register" class="btn-register">Quero ser FlowFit</button>
+                                <button class="btn-login" onclick="window.location.href='login.html'">Já sou aluno</button>
+                                <button id="btn-register" class="btn-register" onclick="window.location.href='cadastro.html'">Quero ser FlowFit</button> 
+                                    <!--onclick codigo java script que linka um botao na pagina-->
                             </div>
                         </div>
             </header>
@@ -90,7 +92,7 @@
             <hr>
             <section>
                 <div class="info-treinos-modalidades">
-                    <h2>Conheça nossos treinos.</h2>
+                    <h2 class="treinoss" id="modalidades">Conheça nossos treinos</h2>
                     <span>
                         Na FlowFit, você tem tudo para cuidar do seu bem-estar e se cuidar por inteiro.
 
@@ -196,7 +198,7 @@
                     <p>Sua melhor versão começa aqui. Estrutura completa e foco em resultados.</p>
                 </div>
             <!-- Três Colunas -->
-            <div class="footer-columns">
+            <div class="footer-columns" id="sobre">
                 <div class="footer-col">
                     <div class="title-wrapper">
                         <h3>PLANOS</h3>

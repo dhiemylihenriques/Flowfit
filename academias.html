@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FlowFit Academias</title>
     <link rel="stylesheet" href="academias.css">
+    <link rel="icon" type="image/png" href="img/logo.jpeg">
 </head>
 <body>   
     <header>
         <nav class="navegacao">
             <h1>Flow<span class="cor-fit">Fit</span></h1>
             <a href="index.html">Home FlowFit</a>
-            <a href="#academias">Academias</a>
-            <a href="login.html" class="btn login">Já sou aluno</a>
-            <a href="cadastro.html" class="btn register">Quero ser FlowFit</a>
+            <a href="academias">Academias</a>
+            <button class="btn-login" onclick="window.location.href='login.html'">Já sou aluno</button>
+            <button id="btn-register" class="btn-register" onclick="window.location.href='cadastro.html'">Quero ser FlowFit</button> 
+              <!--onclick codigo java script que linka um botao na pagina-->
         </nav>
         <h2>Conheça nossas academias FlowFit<br>faça parte você também!</h2>
     </header>

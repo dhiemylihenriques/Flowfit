@@ -2,13 +2,16 @@ body{
    background-color: #E1D9D2;
 
 }
+
 .navegacao h1 {
     color: white;
     margin: 0;
 }
+
 .cor-fit {
     color: #A42835
 }
+
 .navegacao{
     display: flex;
     justify-content: space-around;
@@ -19,24 +22,65 @@ body{
     z-index: 1000;
     background-color: #111c; 
 }
+
 .navegacao a {
     color: #fff;
     text-decoration: none;
 }
+
+.btn-login{
+    background-color: #A32B14;
+    color: #FFFFFF;
+    padding: 15px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-login:hover{
+    background-color: var(--vermelho-flowfit);
+}
+
+.btn-register{
+    background-color: #A42835;
+    color: #FFFFFF;
+    padding: 15px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-register:hover{
+    background-color: var(--cinza);
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
 h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 100px;
     font-size: 30px;
 }
+
 .btn-play.btn-exclusivo{
     background-color: #111;
     color: #fff;
 
 }
+
 .btn-play.btn-exclusivo:hover{
     background-color: #A32B14;
     padding: 15px 30px;
 }
+
 /* Container que organiza as caixas lado a lado */
 .container-boxes {
     display: flex;
@@ -46,6 +90,7 @@ h2{
     padding: 30px 0;
     width: 100%;
 }
+
 /* O box escuro de cada unidade */
 .card-academia {
     background-color: #111;
