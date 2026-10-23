@@ -347,11 +347,6 @@ font-size: 15px
     background-color: var(--branco);
 }
 
-    box-sizing: border-box;{
-    margin: 0;
-    padding: 0;
-}
-
 /* Seção de Planos */
 #planos {
     padding: 60px 20px;
